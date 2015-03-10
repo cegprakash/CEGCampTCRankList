@@ -29,14 +29,14 @@ public class GoogleSpreadSheetAPI {
 	    for(ListEntry entry : feed.getEntries())
 	    {
 	    	Participant participant = new Participant();
-	    	participant.name = entry.getCustomElements().getValue("Name").trim();
-	    	participant.college = entry.getCustomElements().getValue("College").trim();
-	    	participant.branch = entry.getCustomElements().getValue("Branch").trim();
-	    	participant.year = entry.getCustomElements().getValue("Year").trim();
-	    	participant.email = entry.getCustomElements().getValue("Email").trim();
-	    	participant.spojProfileUrl = entry.getCustomElements().getValue("Link to Spoj profile").trim();
-	    	participant.topcoderProfileUrl = entry.getCustomElements().getValue("Link to Topcoder profile").trim();
-	    	participant.participationMode = entry.getCustomElements().getValue("Participation Mode").trim();
+	    	try{ participant.name = entry.getCustomElements().getValue("Name").trim();} catch(Exception e){}	    	
+	    	try{ participant.college = entry.getCustomElements().getValue("College").trim();} catch(Exception e){}
+	    	try{ participant.branch = entry.getCustomElements().getValue("Branch").trim();} catch(Exception e){}
+	    	try{ participant.year = entry.getCustomElements().getValue("Year").trim();} catch(Exception e){}
+	    	try{ participant.email = entry.getCustomElements().getValue("Email").trim();} catch(Exception e){}
+	    	try{ participant.spojProfileUrl = entry.getCustomElements().getValue("Link to Spoj profile").trim();} catch(Exception e){}
+	    	try{ participant.topcoderProfileUrl = entry.getCustomElements().getValue("Link to Topcoder profile").trim();} catch(Exception e){}
+	    	try{ participant.participationMode = entry.getCustomElements().getValue("Participation Mode").trim();} catch(Exception e){}
 	    	participants.add(participant);
 	    }
 		return participants;
@@ -52,8 +52,9 @@ public class GoogleSpreadSheetAPI {
 	    for(ListEntry entry : feed.getEntries())
 	    {
 	    	Submission submission = new Submission();
-	    	submission.email = entry.getCustomElements().getValue("Email").trim();
-	    	submission.problemsSolved = entry.getCustomElements().getValue("Passed system test").trim();
+	    	try{ submission.email = entry.getCustomElements().getValue("Email").trim();} catch(Exception e){}
+	    	try{ submission.problemsSolved = entry.getCustomElements().getValue("PassedSystemTest").trim();} catch(Exception e){}
+	    	submission.findSolvedIds();
 	    	submissions.add(submission);
 	    }
 		return submissions;
