@@ -66,8 +66,17 @@ public class RankListGenerator {
 			answer += "<td>"; answer += name; answer +="</td>";
 			int points = 0;
 			for(int j=0;j<Constants.problemNames.length;j++){
-				answer += "<td style=\"text-align:center\"; bgcolor=\""; answer+=submissions.get(i).didSolve(j+1)?Constants.GREEN:Constants.WHITE; answer +="\"></td>";
-				points += submissions.get(i).didSolve(j+1)? 3 : 0;
+				if(submissions.get(i).didSolve(j+1)){
+					answer += "<td style=\"text-align:center; font-size:12px; color:"+Constants.DARK_GREEN+"\"; bgcolor=\""; answer+=Constants.GREEN; answer +="\">"
+							+ "&#10004;"
+							+ "</td>";					
+					points += 3;
+				}
+				else{
+					answer += "<td>";  answer += "</td>";
+				}
+
+
 			}
 			answer += "<td style=\"text-align:center\";>"; answer += String.valueOf(points); answer +="</td>";
 			answer += "<tr/>";

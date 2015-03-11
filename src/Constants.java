@@ -5,6 +5,7 @@ public class Constants {
 	public static final String PARTICIPANTS_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/14bnQPuadVAYImwrniFVX1lvRJ1cvoyiJRJR9HVWEk8Q"; //Fill in google spreadsheet URI
 	public static final String GREEN = "#33CC33";
 	public static final String WHITE = "#FFFFFF";
+	public static final String DARK_GREEN = "#006600";
 	
 	//Modify values below this line before the start of every contest
 	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1dFfSSAUy5XOpFfA4gdkuzv7_pxw28xPJoG1rEgzdzVM";
@@ -15,4 +16,8 @@ public class Constants {
 		"Carrom Castle",
 		"Donkey Days"
 	};
+	//Problems
+	//Submit
+	//Ranklist
+	
 }
