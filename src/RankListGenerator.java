@@ -48,7 +48,7 @@ public class RankListGenerator {
 		answer += "</table>";
 		answer+="\n";
 		answer +="<b>Submit</b> (Google sign-in required to view the form below)\n";
-		answer+= "<iframe src=\"https://docs.google.com/forms/d/"+Constants.CONTEST_SUBMISSION_FORM_ID+"/viewform?embedded=true\" width=\"760\" height=\"400\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\n";
+		answer+= "<iframe src=\"https://docs.google.com/forms/d/"+Constants.CONTEST_SUBMISSION_FORM_ID+"/viewform?embedded=true\" width=\"760\" height=\"300\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\n";
 		
 		answer +="<b>Leaderboard</b>";
 		answer += " (Last updated at "+formatter.format(calendar.get(Calendar.HOUR_OF_DAY))+":"+formatter.format(calendar.get(Calendar.MINUTE))+" IST)\n\n";
