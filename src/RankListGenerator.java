@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.GregorianCalendar;
@@ -7,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 
 import com.google.gdata.util.ServiceException;
-
 
 public class RankListGenerator {
 	
@@ -34,8 +34,9 @@ public class RankListGenerator {
 	}
 	
 	String getContent(List<Submission> submissions){
+		DecimalFormat formatter = new DecimalFormat("00");
 		Calendar calendar = GregorianCalendar.getInstance();		
-		String answer = "Last updated at "+calendar.get(Calendar.HOUR_OF_DAY)+":"+calendar.get(Calendar.MINUTE)+" IST\n\n";
+		String answer = "Last updated at "+formatter.format(calendar.get(Calendar.HOUR_OF_DAY))+":"+formatter.format(calendar.get(Calendar.MINUTE))+" IST\n\n";
 		answer += "<table style=\"width:100%; border-spacing: 8px;\">";
 		answer += "<colgroup>";
 		answer += "<col span=\"1\" style =\"width: 10%;\">";
