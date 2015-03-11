@@ -36,7 +36,9 @@ public class RankListGenerator {
 	String getContent(List<Submission> submissions){
 		DecimalFormat formatter = new DecimalFormat("00");
 		Calendar calendar = GregorianCalendar.getInstance();		
-		String answer ="<b>Problems</b>";
+		String answer = "";
+		answer +=  "<meta content='60' http-equiv='refresh'/>";
+		answer +="<b>Problems</b>";
 		answer += "<table>";
 		for(int i=0; i<Constants.problemSource.length; i++){
 			answer += "<tr>";
@@ -45,7 +47,7 @@ public class RankListGenerator {
 		}
 		answer += "</table>";
 		answer+="\n";
-		answer +="<b>Submit</b>\n";
+		answer +="<b>Submit</b> (Google sign-in required to view the form below)\n";
 		answer+= "<iframe src=\"https://docs.google.com/forms/d/"+Constants.CONTEST_SUBMISSION_FORM_ID+"/viewform?embedded=true\" width=\"760\" height=\"400\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\n";
 		
 		answer +="<b>Leaderboard</b>";

@@ -22,8 +22,4 @@ public class Constants {
 		"SRM 101 DIV2 500",
 		"SRM 102 DIV2 1000"
 	};
-	//Problems
-	//Submit
-	//Ranklist
-	
 }
