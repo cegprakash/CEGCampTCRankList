@@ -34,9 +34,9 @@ public class GoogleSpreadSheetAPI {
 	    	try{ participant.branch = entry.getCustomElements().getValue("Branch").trim();} catch(Exception e){}
 	    	try{ participant.year = entry.getCustomElements().getValue("Year").trim();} catch(Exception e){}
 	    	try{ participant.email = entry.getCustomElements().getValue("Email").trim();} catch(Exception e){}
-	    	try{ participant.spojProfileUrl = entry.getCustomElements().getValue("Link to Spoj profile").trim();} catch(Exception e){}
-	    	try{ participant.topcoderProfileUrl = entry.getCustomElements().getValue("Link to Topcoder profile").trim();} catch(Exception e){}
-	    	try{ participant.participationMode = entry.getCustomElements().getValue("Participation Mode").trim();} catch(Exception e){}
+	    	try{ participant.spojProfileUrl = entry.getCustomElements().getValue("SpojProfileUrl").trim();} catch(Exception e){}
+	    	try{ participant.topcoderProfileUrl = entry.getCustomElements().getValue("TopcoderProfileUrl").trim();} catch(Exception e){}
+	    	try{ participant.participationMode = entry.getCustomElements().getValue("ParticipationMode").trim();} catch(Exception e){}
 	    	participants.add(participant);
 	    }
 		return participants;
