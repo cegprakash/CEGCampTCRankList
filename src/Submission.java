@@ -12,7 +12,7 @@ public class Submission implements Comparable<Submission>{
 	
 	void findSolvedIds(){
 		solvedIds = new HashSet<Integer>();
-		if(!problemsSolved.contains("None") && !problemsSolved.contains("none")){
+		if(problemsSolved!=null && !problemsSolved.contains("None") && !problemsSolved.contains("none")){
 			problemsSolved = problemsSolved.replaceAll(" ", "");
 			String[] solvedIdStrings = problemsSolved.split(",");
 			for(int i=0;i<solvedIdStrings.length;i++)

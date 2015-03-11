@@ -9,12 +9,18 @@ public class Constants {
 	
 	//Modify values below this line before the start of every contest
 	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1dFfSSAUy5XOpFfA4gdkuzv7_pxw28xPJoG1rEgzdzVM";
+	public static final String CONTEST_SUBMISSION_FORM_ID = "15mIK9iwIh-_K8mQljaVjnWxZH4THtL72W-1chTKKIq0";
 	public static final String RANKLIST_BLOGPOST_ID = "7225215730495036885";
-	public static final String RANKLIST_BLOG_TITLE = "Test Leaderboard #1";
+	public static final String RANKLIST_BLOG_TITLE = "Test Contest #1";
 	public static final String[] problemNames={
 		"Bicycle Bananas",
 		"Carrom Castle",
 		"Donkey Days"
+	};
+	public static final String[] problemSource={
+		"SRM 100 DIV1 250",
+		"SRM 101 DIV2 500",
+		"SRM 102 DIV2 1000"
 	};
 	//Problems
 	//Submit

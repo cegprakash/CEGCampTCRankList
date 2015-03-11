@@ -36,7 +36,20 @@ public class RankListGenerator {
 	String getContent(List<Submission> submissions){
 		DecimalFormat formatter = new DecimalFormat("00");
 		Calendar calendar = GregorianCalendar.getInstance();		
-		String answer = "Last updated at "+formatter.format(calendar.get(Calendar.HOUR_OF_DAY))+":"+formatter.format(calendar.get(Calendar.MINUTE))+" IST\n\n";
+		String answer ="<b>Problems</b>";
+		answer += "<table>";
+		for(int i=0; i<Constants.problemSource.length; i++){
+			answer += "<tr>";
+			answer+= "<td>"+(i+1)+". </td><td>"+Constants.problemNames[i]+"</td><td>"+" - "+"</td><td>"+Constants.problemSource[i]+"</td>\n";
+			answer += "<tr/>";
+		}
+		answer += "</table>";
+		answer+="\n";
+		answer +="<b>Submit</b>\n";
+		answer+= "<iframe src=\"https://docs.google.com/forms/d/"+Constants.CONTEST_SUBMISSION_FORM_ID+"/viewform?embedded=true\" width=\"760\" height=\"400\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>\n";
+		
+		answer +="<b>Leaderboard</b>";
+		answer += " (Last updated at "+formatter.format(calendar.get(Calendar.HOUR_OF_DAY))+":"+formatter.format(calendar.get(Calendar.MINUTE))+" IST)\n\n";
 		answer += "<table style=\"width:100%; border-spacing: 8px;\">";
 		answer += "<colgroup>";
 		answer += "<col span=\"1\" style =\"width: 10%;\">";
