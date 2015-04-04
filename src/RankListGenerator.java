@@ -38,11 +38,14 @@ public class RankListGenerator {
 		Calendar calendar = GregorianCalendar.getInstance();		
 		String answer = "";
 		answer +=  "<meta content='60' http-equiv='refresh'/>";
-		answer +="<b>Problems</b>";
+		
+		answer += "<b>Contest ends at 22:00</b><br><br>";
+		
+		answer +="<b>Problems</b><br><br>";
 		answer += "<table>";
 		for(int i=0; i<Constants.problemSource.length; i++){
 			answer += "<tr>";
-			answer+= "<td>"+(i+1)+". </td><td>"+Constants.problemNames[i]+"</td><td>"+" - "+"</td><td>"+Constants.problemSource[i]+"</td>\n";
+			answer+= "<td>"+(i+1)+". </td><td>"+Constants.problemNames[i]+"</td><td>"+" - "+"</td><td>"+Constants.problemSource[i]+"</td>";
 			answer += "<tr/>";
 		}
 		answer += "</table>";
@@ -78,6 +81,9 @@ public class RankListGenerator {
 			answer += "<tr>";
 			answer += "<td style=\"text-align:center\";>"; answer += String.valueOf(i+1); answer +="</td>";
 			String name = IDs.containsKey(submissions.get(i).email)? participants.get((int) IDs.get(submissions.get(i).email)).name : "Unknown";
+			if(name.length() >= 20)
+				name = name.substring(0, 18) + "..";
+			
 			answer += "<td>"; answer += name; answer +="</td>";
 			int points = 0;
 			for(int j=0;j<Constants.problemNames.length;j++){
