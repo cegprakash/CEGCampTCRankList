@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.security.GeneralSecurityException;
 import java.text.DecimalFormat;
 import java.util.Calendar;
 import java.util.Collections;
@@ -16,7 +17,7 @@ public class RankListGenerator {
 	List<Participant> participants;
 	Map<String, Integer> IDs;
 	
-	RankListGenerator() throws IOException, ServiceException{
+	RankListGenerator() throws IOException, ServiceException, GeneralSecurityException{
 		spreadSheetAPI = new GoogleSpreadSheetAPI();
 		bloggerAPI = new GoogleBloggerAPI();
 		participants = spreadSheetAPI.getParticipants();
@@ -27,10 +28,10 @@ public class RankListGenerator {
 			IDs.put(participants.get(i).email, i);
 	}
 
-	void generate() throws IOException, ServiceException{
+	void generate() throws IOException, ServiceException, GeneralSecurityException{
 		List<Submission> submissions = spreadSheetAPI.getSubmissions();
 		Collections.sort(submissions);
-		bloggerAPI.createPost(getContent(submissions));
+		bloggerAPI.udpatePost(getContent(submissions));
 	}
 	
 	String getContent(List<Submission> submissions){

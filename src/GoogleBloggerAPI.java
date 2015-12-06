@@ -1,27 +1,19 @@
 import java.io.IOException;
-import java.net.URL;
+import java.security.GeneralSecurityException;
 
-import com.google.gdata.client.GoogleService;
-import com.google.gdata.data.Entry;
-import com.google.gdata.data.PlainTextConstruct;
+import com.google.api.services.blogger.Blogger.Posts.Update;
+import com.google.api.services.blogger.model.Post;
 import com.google.gdata.util.AuthenticationException;
-import com.google.gdata.util.ServiceException;
 
 
-public class GoogleBloggerAPI {
-	
-	GoogleService service;
-	
-	GoogleBloggerAPI() throws AuthenticationException{
-		service = new GoogleService("blogger", "exampleCo-exampleApp-1");
-	    service.setUserCredentials(Constants.GOOGLE_ACCOUNT_USERNAME, Constants.GOOGLE_ACCOUNT_PASSWORD);	
-	}
-	
-	public Entry createPost(String content) throws ServiceException, IOException {
-		Entry myEntry = new Entry();
-		myEntry.setTitle(new PlainTextConstruct(Constants.RANKLIST_BLOG_TITLE));
-		myEntry.setContent(new PlainTextConstruct(content));
-		URL postUrl = new URL("http://www.blogger.com/feeds/" + Constants.GOOGLE_BLOG_ID + "/posts/default/" + Constants.RANKLIST_BLOGPOST_ID);
-		return service.update(postUrl, myEntry);
+public class GoogleBloggerAPI {	
+	public void udpatePost(String content) throws IOException, AuthenticationException, GeneralSecurityException{
+		Post post = new Post();
+		post.setTitle(Constants.RANKLIST_BLOG_TITLE);
+		post.setContent(content);
+		Update updateAction = GoogleCredentialsHelper.getBlog().posts().update(Constants.GOOGLE_BLOG_ID, Constants.RANKLIST_BLOGPOST_ID, post);
+		updateAction.setFields("author/displayName,content,published,title,url");
+		post = updateAction.execute();
+		System.out.println("Published: " + post.getPublished());  
 	}
 }

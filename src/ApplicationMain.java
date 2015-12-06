@@ -1,11 +1,12 @@
 import java.io.IOException;
+import java.security.GeneralSecurityException;
 import java.util.concurrent.TimeUnit;
 
 import com.google.gdata.util.ServiceException;
 
 public class ApplicationMain {
 	
-	public static void main(String args[]) throws IOException, ServiceException, InterruptedException{
+	public static void main(String args[]) throws IOException, ServiceException, InterruptedException, GeneralSecurityException{
 		RankListGenerator rankListGenerator = new RankListGenerator();
 		int c=0;
 		while(true){

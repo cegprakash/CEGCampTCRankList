@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.net.URL;
+import java.security.GeneralSecurityException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,9 +15,8 @@ import com.google.gdata.util.ServiceException;
 public class GoogleSpreadSheetAPI {
 	
 	SpreadsheetService service;
-	GoogleSpreadSheetAPI() throws AuthenticationException{
-		service = new SpreadsheetService("Google Spreadsheet Demo");
-	    service.setUserCredentials(Constants.GOOGLE_ACCOUNT_USERNAME, Constants.GOOGLE_ACCOUNT_PASSWORD);
+	GoogleSpreadSheetAPI() throws AuthenticationException, IOException, GeneralSecurityException{
+		service = GoogleCredentialsHelper.getSpreadSheetService();
 	}
 	
 	List<Participant> getParticipants() throws IOException, ServiceException{
