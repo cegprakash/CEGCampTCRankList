@@ -38,9 +38,9 @@ public class RankListGenerator {
 		DecimalFormat formatter = new DecimalFormat("00");
 		Calendar calendar = GregorianCalendar.getInstance();		
 		String answer = "";
-		answer +=  "<meta content='60' http-equiv='refresh'/>";
+		//answer +=  "<meta content='60' http-equiv='refresh'/>";
 		
-		answer += "<b>Contest ends at 22:00</b><br><br>";
+		answer += "<b>Contest ends at "+Constants.endTime+"</b><br><br>";
 		
 		answer +="<b>Problems</b><br><br>";
 		answer += "<table>";
