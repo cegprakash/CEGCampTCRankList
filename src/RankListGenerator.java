@@ -43,9 +43,9 @@ public class RankListGenerator {
 		
 		answer +="<b>Problems</b><br><br>";
 		answer += "<table>";
-		for(int i=0; i<Constants.problemSource.length; i++){
+		for(int i=0; i<Constants.problems.length; i++){
 			answer += "<tr>";
-			answer+= "<td>"+(i+1)+". </td><td>"+Constants.problemNames[i]+"</td><td>"+" - "+"</td><td>"+Constants.problemSource[i]+"</td>";
+			answer+= "<td>"+(i+1)+". </td><td>"+Constants.problems[i].title+"</td><td>"+" - "+"</td><td>"+Constants.problems[i].source+ "</td><td>"+ " ("+Constants.problems[i].score+ (Constants.problems[i].score >= 1?" points)":"point)") +"</td>";
 			answer += "<tr/>";
 		}
 		answer += "</table>";
@@ -59,8 +59,8 @@ public class RankListGenerator {
 		answer += "<colgroup>";
 		answer += "<col span=\"1\" style =\"width: 10%;\">";
 		answer += "<col span=\"1\" style =\"width: 25%;\">";
-		for(int i=0;i<Constants.problemNames.length;i++){
-			answer += "<col span=\"1\" style =\"width: "+String.valueOf(50/Constants.problemNames.length)+"%;\">";
+		for(int i=0;i<Constants.problems.length;i++){
+			answer += "<col span=\"1\" style =\"width: "+String.valueOf(50/Constants.problems.length)+"%;\">";
 		}		
 		answer += "<col span=\"1\" style =\"width: 15%;\">";
 		answer += "</colgroup>";
@@ -68,8 +68,8 @@ public class RankListGenerator {
 		answer+= "<tr>";
 		answer += "<th style=\"text-align:center\";>";  answer += "Rank"; answer += "</th>";
 		answer += "<th>";  answer += "Name"; answer += "</th>";
-		for(int i=0;i<Constants.problemNames.length;i++){
-			answer += "<th style=\"text-align:center\";>";  answer += Constants.problemNames[i]; answer += "</th>";
+		for(int i=0;i<Constants.problems.length;i++){
+			answer += "<th style=\"text-align:center\";>";  answer += Constants.problems[i].title; answer += "</th>";
 		}
 		answer += "<th style=\"text-align:center\";>";  answer += "Points"; answer += "</th>";
 		answer += "<tr/>";		
@@ -86,12 +86,12 @@ public class RankListGenerator {
 			
 			answer += "<td>"; answer += name; answer +="</td>";
 			int points = 0;
-			for(int j=0;j<Constants.problemNames.length;j++){
+			for(int j=0;j<Constants.problems.length;j++){
 				if(submissions.get(i).didSolve(j+1)){
 					answer += "<td style=\"text-align:center; font-size:12px; color:"+Constants.DARK_GREEN+"\"; bgcolor=\""; answer+=Constants.GREEN; answer +="\">"
 							+ "&#10004;"
 							+ "</td>";					
-					points += 3;
+					points += Constants.problems[j].score;
 				}
 				else{
 					answer += "<td>";  answer += "</td>";

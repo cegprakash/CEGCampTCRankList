@@ -2,7 +2,7 @@ public class Constants {
 	public static final String GOOGLE_ACCOUNT_USERNAME = "cegcodingcamp"; // Fill in google account username
 	public static final String GOOGLE_ACCOUNT_PASSWORD = "cegcampcoding"; // Fill in google account password
 	public static final String GOOGLE_BLOG_ID = "6075750740688262534";
-	public static final String PARTICIPANTS_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1x_Z5tlu_FyqU-9oGY-gSaMkRRHCj4kw2zckyylVOKyM"; //Fill in google spreadsheet URI
+	public static final String PARTICIPANTS_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1fHvCasXwAQrA394oEfPABhBpCFjYhoDN25oT-f92pPU"; //Fill in google spreadsheet URI
 	public static final String GREEN = "#33CC33";
 	public static final String WHITE = "#FFFFFF";
 	public static final String DARK_GREEN = "#006600";
@@ -54,20 +54,18 @@ public class Constants {
 //	public static final String endTime = "23:59";
 	
 	
-	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1y8IPnf-l2UdK-QiE9MxtebwMezJlbfdJhtop--YI3aI";
-	public static final String CONTEST_SUBMISSION_FORM_ID = "1gdJCD90s9HHfaM50INokUsMm_K4tuGMor15VMOXhj1o";
-	public static final String RANKLIST_BLOGPOST_ID = "3560214528543898905";
-	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #3";
-	public static final String[] problemNames={
-		"CIRCUITS",
-		"MazeWandering",
-		"TEAMBUILDER"
+	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1cUxHfu4SCz8rM6Hr4u_4uyRjDwqFfJkNBE0DL3wny4E";
+	public static final String CONTEST_SUBMISSION_FORM_ID = "1HSeIhEiGbhnZr1eOh7kaPNV9QCIyS1D4ldm6-7LUJ9E";
+	public static final String RANKLIST_BLOGPOST_ID = "1920597956953797810";
+	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #1";
+	
+	
+	public static final Problem[] problems = {
+		new Problem("CIRCUITS","TCCC 03 Semifinals DIV1 275", 3),
+		new Problem("MazeWandering", "SRM 440 DIV2 500", 2),
+		new Problem("TEAMBUILDER", "SRM 184 DIV2 1000", 1)		
 	};
-	public static final String[] problemSource={
-		"TCCC 03 Semifinals DIV1 275",
-		"SRM 440 DIV2 500",
-		"SRM 184 DIV2 1000"
-	};
+		
 	public static final String endTime = "23:59 PM";
 	
 	
