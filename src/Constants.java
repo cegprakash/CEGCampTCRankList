@@ -7,82 +7,33 @@ public class Constants {
 	public static final String WHITE = "#FFFFFF";
 	public static final String DARK_GREEN = "#006600";
 //	
-//	//Modify values below this line before the start of every contest
-//	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1g8bCXDUAu8IYZYweCYzxJkwfBgG7TNO4eJLrxPfHm2o";
-//	public static final String CONTEST_SUBMISSION_FORM_ID = "1wdUkUKPp4_mCuaa83RHDlMvrx6MVMQg96RLjrtHFsBQ";
-//	public static final String RANKLIST_BLOGPOST_ID = "5591952842097252575";
+//	//Modify values below this line before the start of every contest	
+	
+//	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1cUxHfu4SCz8rM6Hr4u_4uyRjDwqFfJkNBE0DL3wny4E";
+//	public static final String CONTEST_SUBMISSION_FORM_ID = "1HSeIhEiGbhnZr1eOh7kaPNV9QCIyS1D4ldm6-7LUJ9E";
+//	public static final String RANKLIST_BLOGPOST_ID = "1920597956953797810";
 //	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #1";
-//	public static final String[] problemNames={
-//		"SIMPLE",
-//		"YAPP",
-//		"BRCKTS",
-//		"KGSS",
-//		"NICEDAY",
-//		"MULTQ3"
+//	public static final Problem[] problems = {
+//		new Problem("SHOPKEEPER","<a href =\"http://www.spoj.com/problems/WEIGHT3\">SPOJ - Vegetable Shopkeeper 3</a>", 3),
+//		new Problem("TriGraphs", "<a href = \"http://www.spoj.com/problems/ACPC10D/\">SPOJ - TriGraphs</a>", 2),
+//		new Problem("TREE", "<a href = \"http://www.spoj.com/problems/PT07Y/\">SPOJ - Is it a tree?</a>", 2),
+//		new Problem("FARIDA", "<a href = \"http://www.spoj.com/problems/FARIDA/\">SPOJ - Farida</a>", 3),
+//		new Problem("BYTESM2", "<a href = \"http://www.spoj.com/problems/BYTESM2/\">SPOJ - BYTESM2</a>", 2),
+//		new Problem("EDIST", "<a href = \"http://www.spoj.com/problems/EDIST/\">SPOJ - EDIST</a>", 1)						
 //	};
-//	public static final String[] problemSource={
-//		"<a href =\"http://www.spoj.com/problems/SIMPLE/\">SPOJ - SIMPLE</a> (Not a sgement tree problem)",
-//		"<a href =\"http://www.spoj.com/problems/YAPP/\">SPOJ - YAPP</a> (Not a sgement tree problem)",
-//		"<a href =\"http://www.spoj.com/problems/BRCKTS/\">SPOJ - BRCKTS</a>",
-//		"<a href =\"http://www.spoj.com/problems/KGSS/\">SPOJ - KGSS</a>",
-//		"<a href =\"http://www.spoj.com/problems/NICEDAY/\">SPOJ - NICEDAY</a>",
-//		"<a href =\"http://www.spoj.com/problems/MULTQ3/\">SPOJ - MULTQ3</a>"
-//	};
-//	public static final String endTime = "23:59";
-//	
+//	public static final String endTime = "23:00 PM";
 	
-//	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/11jF3m9JEQ1airBUYC292MoUnBmQf-SaBdVHC5U4ysIk";
-//	public static final String CONTEST_SUBMISSION_FORM_ID = "1KAu-iUR-FZxdGzyUDq8dkVS5RDOadw0BKGLZpubUfx4";
-//	public static final String RANKLIST_BLOGPOST_ID = "7228775425061736867";
-//	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #2";
-//	public static final String[] problemNames={
-//		"ORDERS",
-//		"CUBEFR",
-//		"AKVQLD",
-//		"HAYBALE",
-//		"DCEPC",
-//		"ANDROUND"
-//	};
-//	public static final String[] problemSource={
-//		"<a href =\"http://www.spoj.com/problems/ORDERS/\">SPOJ - ORDERS</a>",
-//		"<a href =\"http://www.spoj.com/problems/CUBEFR/\">SPOJ - CUBEFR</a>	",
-//		"<a href =\"http://www.spoj.com/problems/AKVQLD03/\">SPOJ - AKVQLD03</a>",
-//		"<a href =\"http://www.spoj.com/problems/HAYBALE\">SPOJ - HAYBALE</a>",
-//		"<a href =\"http://www.spoj.com/problems/DCEPC206/\">SPOJ - DCEPC206</a>",
-//		"<a href =\"http://www.spoj.com/problems/ANDROUND/\">SPOJ - ANDROUND</a>"
-//	};
-//	public static final String endTime = "23:59";
-	
-	
-	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1cUxHfu4SCz8rM6Hr4u_4uyRjDwqFfJkNBE0DL3wny4E";
-	public static final String CONTEST_SUBMISSION_FORM_ID = "1HSeIhEiGbhnZr1eOh7kaPNV9QCIyS1D4ldm6-7LUJ9E";
-	public static final String RANKLIST_BLOGPOST_ID = "1920597956953797810";
-	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #1";
-	
-	
+	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1ge9IjGp4Vo89BHb6dwElTuGuJLDLOeHiyKCATjCmMlw";
+	public static final String CONTEST_SUBMISSION_FORM_ID = "15aZnxAci5pMhntmJfaRW-V1VxId_TApMRUXmcW2WHfE";
+	public static final String RANKLIST_BLOGPOST_ID = "605750136408383382";
+	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #2";
 	public static final Problem[] problems = {
-		new Problem("CIRCUITS","TCCC 03 Semifinals DIV1 275", 3),
-		new Problem("MazeWandering", "SRM 440 DIV2 500", 2),
-		new Problem("TEAMBUILDER", "SRM 184 DIV2 1000", 1)		
+		new Problem("Points","<a href =\"http://lightoj.com/volume_showproblem.php?problem=1088\">LIGHTOJ - Points in Segments</a>", 2),
+		new Problem("XORSum", "<a href = \"https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8&category=345&page=show_problem&problem=2683\">ICPCArchive - XOR Sum</a>", 1),
+		new Problem("BusyMan", "<a href = \"http://www.spoj.com/problems/BUSYMAN/\">SPOJ - Busy Man</a>", 3),
+		new Problem("PHONELST", "<a href = \"http://www.spoj.com/problems/PHONELST/\">SPOJ - Phone List</a>", 1),			
 	};
-		
-	public static final String endTime = "23:59 PM";
-	
-	
-//	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/16MA3erbyQYoE4g9sbqtNMWX-WAK7OmSHh9liG5VLnS0";
-//	public static final String CONTEST_SUBMISSION_FORM_ID = "1Ssqj-18-A82lYVFaHh3kI42LsH5_rROB3aq9UuoPh08";
-//	public static final String RANKLIST_BLOGPOST_ID = "628211494216333932";
-//	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #4	";
-//	public static final String[] problemNames={
-//		"BoardEscapeDiv2",
-//		"HELPBTW",
-//		"KATHTHI"
-//	};
-//	public static final String[] problemSource={
-//		"BoardEscapeDiv2 - SRM 676 Div2 500",
-//		"<a href =\"http://www.spoj.com/problems/HELPBTW/\">SPOJ - HELPBTW</a>",
-//		"<a href =\"http://www.spoj.com/problems/KATHTHI/\">SPOJ - KATHTHI</a>"
-//	};
-//	public static final String endTime = "23:59 PM";
+	public static final String endTime = "23:00 PM";
+//		
 
 }

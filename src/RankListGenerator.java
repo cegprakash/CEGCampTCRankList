@@ -45,7 +45,7 @@ public class RankListGenerator {
 		answer += "<table>";
 		for(int i=0; i<Constants.problems.length; i++){
 			answer += "<tr>";
-			answer+= "<td>"+(i+1)+". </td><td>"+Constants.problems[i].title+"</td><td>"+" - "+"</td><td>"+Constants.problems[i].source+ "</td><td>"+ " ("+Constants.problems[i].score+ (Constants.problems[i].score >= 1?" points)":"point)") +"</td>";
+			answer+= "<td>"+(i+1)+". </td><td>"+Constants.problems[i].title+"</td><td>"+" - "+"</td><td>"+Constants.problems[i].source+ "</td><td>"+ " ("+Constants.problems[i].score+ (Constants.problems[i].score > 1?" points)":" point)") +"</td>";
 			answer += "<tr/>";
 		}
 		answer += "</table>";
