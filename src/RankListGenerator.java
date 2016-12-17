@@ -39,7 +39,7 @@ public class RankListGenerator {
 		Calendar calendar = GregorianCalendar.getInstance();		
 		String answer = "";
 		//answer +=  "<meta content='60' http-equiv='refresh'/>";
-		answer += "<b>Contest ends at "+Constants.endTime+"</b><br><br>";
+		answer += "<b>Contest ends at </b>"+Constants.endTime+"<br><br>";
 		
 		answer +="<b>Problems</b><br><br>";
 		answer += "<table>";
