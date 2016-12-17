@@ -75,6 +75,21 @@ public class Constants {
 		"https://topcoder.com<br/>"+
 		"https://www.topcoder.com<br/>"+
 		"https://arena.topcoder.com<br/>";	
+	
+	
+
+//	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1ocFjx9ZXVwrI3eeIx5nmd58-QDyA8x-sCiF20gtOKh8";	
+//	public static final String CONTEST_SUBMISSION_FORM_ID = "1NFWXySI_3Q5Oomc-PRhM3UuXwOCaGJ1v5k0Vw54ZMQE";
+//	public static final String RANKLIST_BLOGPOST_ID = "5790718420189060754";
+//	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #5";
+//	public static final Problem[] problems = {
+//		new Problem("GCPC","<a href =\"http://spoj.com/problems/GCPC11C\">GCPC11C</a>", 2),
+//		new Problem("TFRIENDS", "<a href = \"http://spoj.com/problems/TFRIENDS\">TFRIENDS</a>", 2),
+//		new Problem("SUBMER", "<a href = \"http://spoj.com/problems/SUBMERGE\">SUBMER</a>", 2),
+//		new Problem("POLQRY", "<a href = \"http://spoj.com/problems/POLQUERY\">POLQUERY</a>", 2),
+//	};
+//	public static final String endTime = "23:00 PM";
+	
 //	centroid
 //	http://codeforces.com/problemset/problem/276/B - 3 
 //	http://codeforces.com/problemset/problem/493/D  -2 
