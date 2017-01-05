@@ -53,30 +53,30 @@ public class Constants {
 //	public static final String endTime = "23:00 PM";
 
 	
-	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1luBjN0lGxC0mXg-e_D3E8hzrqoNDndzrnmO4zwhMjyA";	
-	public static final String CONTEST_SUBMISSION_FORM_ID = "1lTKq10kRv1FQuE868JIMWhIdwGub9wpmkWKkAoWFLj8";
-	public static final String RANKLIST_BLOGPOST_ID = "4452860267918154903";
-	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #4";
-	public static final Problem[] problems = {
-		new Problem("Subsets","Topcoder  SRM 701 Division II, Level Two", 3),
-		new Problem("Colorful ","Topcoder SRM 596 Round 1 Division II, Level Two", 3),
-		new Problem("MazeWan","SRM 440 Round 1 - Division II, Level Two", 3),
-		new Problem("XorTrav","SRM 556 Round 1 - Division I, Level One", 2),
-		new Problem("Jumping","SRM 368 Round 1 - Division I, Level One", 1)
-	};
-	public static final String endTime = "23:00 PM<br/>"+
-	"Topcoder applet : http://community.topcoder.com/contest/arena/ContestAppletProd.jnlp<br/>"+
-		"If you get Java Security Exception, then do this step<br/>"+
-		"Control Panel -> Java -> Security -> Exception list<br/>"+
-		"Add the following sites<br/>"+
-		"http://topcoder.com<br/>"+
-		"http://www.topcoder.com<br/>"+
-		"http://arena.topcoder.com<br/>"+
-		"https://topcoder.com<br/>"+
-		"https://www.topcoder.com<br/>"+
-		"https://arena.topcoder.com<br/>";	
-	
-	
+//	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1luBjN0lGxC0mXg-e_D3E8hzrqoNDndzrnmO4zwhMjyA";	
+//	public static final String CONTEST_SUBMISSION_FORM_ID = "1lTKq10kRv1FQuE868JIMWhIdwGub9wpmkWKkAoWFLj8";
+//	public static final String RANKLIST_BLOGPOST_ID = "4452860267918154903";
+//	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #4";
+//	public static final Problem[] problems = {
+//		new Problem("Subsets","Topcoder  SRM 701 Division II, Level Two", 3),
+//		new Problem("Colorful ","Topcoder SRM 596 Round 1 Division II, Level Two", 3),
+//		new Problem("MazeWan","SRM 440 Round 1 - Division II, Level Two", 3),
+//		new Problem("XorTrav","SRM 556 Round 1 - Division I, Level One", 2),
+//		new Problem("Jumping","SRM 368 Round 1 - Division I, Level One", 1)
+//	};
+//	public static final String endTime = "23:00 PM<br/>"+
+//	"Topcoder applet : http://community.topcoder.com/contest/arena/ContestAppletProd.jnlp<br/>"+
+//		"If you get Java Security Exception, then do this step<br/>"+
+//		"Control Panel -> Java -> Security -> Exception list<br/>"+
+//		"Add the following sites<br/>"+
+//		"http://topcoder.com<br/>"+
+//		"http://www.topcoder.com<br/>"+
+//		"http://arena.topcoder.com<br/>"+
+//		"https://topcoder.com<br/>"+
+//		"https://www.topcoder.com<br/>"+
+//		"https://arena.topcoder.com<br/>";	
+//	
+//	
 
 //	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1ocFjx9ZXVwrI3eeIx5nmd58-QDyA8x-sCiF20gtOKh8";	
 //	public static final String CONTEST_SUBMISSION_FORM_ID = "1NFWXySI_3Q5Oomc-PRhM3UuXwOCaGJ1v5k0Vw54ZMQE";
@@ -89,6 +89,32 @@ public class Constants {
 //		new Problem("POLQRY", "<a href = \"http://spoj.com/problems/POLQUERY\">POLQUERY</a>", 2),
 //	};
 //	public static final String endTime = "23:00 PM";
+	
+//	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1CVHp_owBlLBfAttWrxX22PxYezg6jStFthiNPrM0S6A";	
+//	public static final String CONTEST_SUBMISSION_FORM_ID = "1ijfV7sKIVsdG_XDUTtwWXgfTbx3IKZqXJqpWatsqqzE";
+//	public static final String RANKLIST_BLOGPOST_ID = "8773537619787573193";
+//	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #6";
+//	public static final Problem[] problems = {
+//		new Problem("Planets","<a href=\"http://codeforces.com/problemset/problem/229/B\">CF -  Planets</a>", 2),
+//		new Problem("Dijk", "<a href=\"http://www.spoj.com/problems/EZDIJKST\">Spoj -  Easy Dijkstra Problem</a>", 3),
+//		new Problem("SAMER", "<a href=\"http://www.spoj.com/problems/SAMER08A/\">Spoj - Almost Shortest Path</a>", 1),
+//		new Problem("Robot", "<a href=\"http://codeforces.com/problemset/problem/589/J\">CF - Cleaner Robot</a>", 3),
+//		new Problem("Forest", "<a href=\"http://codeforces.com/problemset/problem/329/B\">CF -  Biridian Forest</a>", 2),
+//	};
+//	public static final String endTime = "23:00 PM";	
+	
+	
+	public static final String CONTEST_SUBMISSION_SPREADSHEET_URL = "https://spreadsheets.google.com/feeds/spreadsheets/1s4ayafOdTH9K6diprLMDeyr8fVy5mFYUnsa_3-yDgKo";	
+	public static final String CONTEST_SUBMISSION_FORM_ID = "1QN2WtTyBvNJacDwONk9P57jFZv4Y8LEzzl1Q-kaxNrY";
+	public static final String RANKLIST_BLOGPOST_ID = "1872607468345498698";
+	public static final String RANKLIST_BLOG_TITLE = "CEG Coding Camp Contest #7";
+	public static final Problem[] problems = {
+		new Problem("Three","<a href=\"http://www.spoj.com/problems/MULTQ3/\">Spoj -  Multiples of Three</a>", 3),
+		new Problem("Brackets", "<a href=\"http://www.spoj.com/problems/BRCKTS/\">Spoj -  Brackets</a>", 3),
+		new Problem("GSS1", "<a href=\"http://www.spoj.com/problems/GSS1/\">Spoj -  Can you answer these queries I</a>", 1),
+		new Problem("KQuery", "<a href=\"http://www.spoj.com/problems/KQUERY/\">Spoj -  K-query</a>", 1),
+	};
+	public static final String endTime = "23:00 PM";	
 	
 //	centroid
 //	http://codeforces.com/problemset/problem/276/B - 3 
