@@ -42,9 +42,9 @@ public class GoogleSpreadSheetAPI {
 		return participants;
 	}
 	
-	List<Submission> getSubmissions() throws IOException, ServiceException{
+	List<Submission> getSubmissions(int contestId) throws IOException, ServiceException{
 		List<Submission> submissions = new ArrayList<Submission>();
-	    URL metafeedUrl = new URL(Constants.CONTEST_SUBMISSION_SPREADSHEET_URL);
+	    URL metafeedUrl = new URL(Constants.contests[contestId].CONTEST_SUBMISSION_SPREADSHEET_URL);
 	    SpreadsheetEntry spreadsheet = service.getEntry(metafeedUrl, SpreadsheetEntry.class);
 	    URL listFeedUrl = ((WorksheetEntry) spreadsheet.getWorksheets().get(0)).getListFeedUrl();
 
@@ -54,7 +54,7 @@ public class GoogleSpreadSheetAPI {
 	    	Submission submission = new Submission();
 	    	try{ submission.email = entry.getCustomElements().getValue("Email").trim();} catch(Exception e){}
 	    	try{ submission.problemsSolved = entry.getCustomElements().getValue("PassedSystemTest").trim();} catch(Exception e){}
-	    	submission.findSolvedIds();
+	    	submission.findSolvedIds(contestId);
 	    	submissions.add(submission);
 	    }
 		return submissions;

@@ -11,7 +11,7 @@ public class Submission implements Comparable<Submission>{
 		solvedIds = null;
 	}
 	
-	void findSolvedIds(){
+	void findSolvedIds(int contestId){
 		score = 0;
 		solvedIds = new HashSet<Integer>();
 		if(problemsSolved!=null && !problemsSolved.contains("None") && !problemsSolved.contains("none")){
@@ -19,7 +19,7 @@ public class Submission implements Comparable<Submission>{
 			String[] solvedIdStrings = problemsSolved.split(",");
 			for(int i=0;i<solvedIdStrings.length;i++){
 				solvedIds.add(Integer.parseInt(solvedIdStrings[i]));		
-				score += Constants.problems[Integer.parseInt(solvedIdStrings[i])-1].score;
+				score += Constants.contests[contestId].problems[Integer.parseInt(solvedIdStrings[i])-1].score;
 			}
 		}	
 	}
